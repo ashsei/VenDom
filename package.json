@@ -1,0 +1,25 @@
+{
+  "name": "vendom",
+  "version": "1.0.0",
+  "description": "General Assembly Project Two",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashsei/VenDom.git"
+  },
+  "author": "Ashton RK Seibel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashsei/VenDom/issues"
+  },
+  "homepage": "https://github.com/ashsei/VenDom#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.22"
+  }
+}
