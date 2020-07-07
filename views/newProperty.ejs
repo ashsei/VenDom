@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('./partials/head.ejs') %>
+</head>
+<body>
+    <%- include ('./partials/header.ejs') %>
+    <h1>Add a New Property to Your Favorites!</h1>
+    <form action="/vendom" method="POST">
+        Rent or Buy? : <select name="type">
+            <option value="rent">Rent</option>
+            <option value="buy">Buy</option>
+        </select></br>
+        Property Nickname: <input type="text" name="nickname"></br>
+        Property Address: <input type="text" name="address"></br>
+        Image Link: <input type="text" name="primary-img"></br>
+        Bedrooms: <input type="number" name="beds">
+        Bathrooms: <input type="number" name="baths">
+        Square Footage: <input type="number" name="sqft"></br>
+        Description: <input type="textarea" name="description"></br>
+        <input type="submit" value="Add Property"></br>
+    </form>
+    <%- include ('./partials/footer.ejs') %>
+</body>
+</html>
