@@ -11,6 +11,7 @@ mongoose.connection.once('open', () => {
 });
 
 // DATA //
+const Property = require('./models/propertySchema.js');
 
 // ROUTES //
     // NEW //
@@ -21,13 +22,20 @@ mongoose.connection.once('open', () => {
     });
     // CREATE //
     app.post('/vendom/', (req, res) => {
-        res.send(req.body); 
+        Property.create(req.body, (error, createdProperty) => {
+            res.send(createdProperty);
+            res.redirect('/vendom');
+        });
     });
-
-
-
-
-
+    // INDEX //
+    app.get('/vendom', (req, res) => {
+        Property.find({}, (error, allProperties) => {
+            res.render('mainIndex.ejs', {
+                properties: allProperties,
+                tabTitle: 'Home',
+            });
+        });
+    });
 
 
 

@@ -12,12 +12,12 @@
             <option value="buy">Buy</option>
         </select></br>
         Property Nickname: <input type="text" name="nickname"></br>
-        Property Address: <input type="text" name="address"></br>
-        Image Link: <input type="text" name="primary-img"></br>
-        Bedrooms: <input type="number" name="beds">
-        Bathrooms: <input type="number" name="baths">
-        Square Footage: <input type="number" name="sqft"></br>
-        Description: <input type="textarea" name="description"></br>
+        Property Address: <input type="text" name="address" required></br>
+        Image Link: <input type="text" name="img" required></br>
+        Bedrooms: <input type="number" name="beds" required>
+        Bathrooms: <input type="number" name="baths" required>
+        Square Footage: <input type="number" name="sqft" required></br>
+        Description: <input type="textarea" name="description" required></br>
         <input type="submit" value="Add Property"></br>
     </form>
     <%- include ('./partials/footer.ejs') %>

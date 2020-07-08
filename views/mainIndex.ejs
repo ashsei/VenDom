@@ -5,9 +5,20 @@
 </head>
 <body>
     <%- include ('./partials/header.ejs') %>
-
-
-
+    <h1>Your Favorite Properties</h1>
+    <!-- Change how this loop presents information once decided on CSS framework. -->
+    <ul>
+        <% for (let i = 0; i < properties.length; i++){ %>
+            <li>
+                <img src= "<%= properties[i].img %>" class = main_img><br>
+                <% if (properties[i].nickname != undefined) { %>
+                    Nickname: <%= properties[i].nickname %><br>
+                <% } %>
+                Address: <%= properties[i].address %><br>
+            </li>
+            <% } %>
+    </ul>
+    <button onclick="window.location.href='/vendom/add'">Add a New Property</button>
     <%- include ('./partials/footer.ejs') %>
 </body>
 </html>
