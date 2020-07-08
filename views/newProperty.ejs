@@ -11,14 +11,20 @@
             <option value="rent">Rent</option>
             <option value="buy">Buy</option>
         </select></br>
-        Property Nickname: <input type="text" name="nickname"></br>
-        Property Address: <input type="text" name="address" required></br>
-        Image Link: <input type="text" name="img" required></br>
-        Bedrooms: <input type="number" name="beds" required>
-        Bathrooms: <input type="number" name="baths" required>
-        Square Footage: <input type="number" name="sqft" required></br>
-        Description: <input type="textarea" name="description" required></br>
+        Property Nickname: <input type="text" name="nickname" placeholder="(Optional)"></br>
+        Property Address: <input type="text" name="address" required placeholder="(Required)"></br>
+        Image Link: <input type="text" name="img" required placeholder="(Required)"></br>
+        Bedrooms: <input type="number" name="beds" required placeholder="(Required)">
+        Bathrooms: <input type="number" name="baths" required placeholder="(Required)">
+        Square Footage: <input type="number" name="sqft" required placeholder="(Required)"></br>
+        Price: <input type="number" name="price" required placeholder="(Required)">
+        Cost Basis: <select name="cost_basis">
+            <option value="Per Month">Per Month</option>
+            <option value="Purchase Price">Purchase Price</option>
+        </select></br>
+        Description: <input type="textarea" name="description" required placeholder="(Required)"></br>
         <input type="submit" value="Add Property"></br>
+        
     </form>
     <%- include ('./partials/footer.ejs') %>
 </body>

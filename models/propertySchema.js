@@ -8,7 +8,10 @@ const propertySchema = new mongoose.Schema({
     beds: { type: Number, required: true},
     baths: { type: Number, required: true},
     sqft: { type: Number, required: true},
+    price: { type: Number, required: true},
+    cost: { type: String, required: true},
     description: { type: String, required: true}
+    
 });
 
 const Property = mongoose.model('Property', propertySchema);
