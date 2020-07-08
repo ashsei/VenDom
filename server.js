@@ -5,6 +5,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.urlencoded({extended:true}));
+app.use(express.static('public'));
 mongoose.connect('mongodb://localhost:27017/vendom', { useNewUrlParser: true , useUnifiedTopology: true });
 mongoose.connection.once('open', () => {
     console.log('Connected to Mongo');
