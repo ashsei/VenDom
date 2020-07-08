@@ -27,6 +27,15 @@ const Property = require('./models/propertySchema.js');
             res.redirect('/vendom');
         });
     });
+    // SHOW //
+    app.get('/vendom/:id', (req, res) => {
+        Property.findById(req.params.id, (error, foundProperty) => {
+            res.render('propertyShow.ejs', {
+                property: foundProperty,
+                tabTitle: 'Property Information'
+            });
+        });
+    });
     // INDEX //
     app.get('/vendom', (req, res) => {
         Property.find({}, (error, allProperties) => {

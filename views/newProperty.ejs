@@ -8,8 +8,8 @@
     <h1>Add a New Property to Your Favorites!</h1>
     <form action="/vendom" method="POST">
         Rent or Buy? : <select name="type">
-            <option value="rent">Rent</option>
-            <option value="buy">Buy</option>
+            <option value="Rent">Rent</option>
+            <option value="Buy">Buy</option>
         </select></br>
         Property Nickname: <input type="text" name="nickname" placeholder="(Optional)"></br>
         Property Address: <input type="text" name="address" required placeholder="(Required)"></br>
@@ -17,7 +17,7 @@
         Bedrooms: <input type="number" name="beds" required placeholder="(Required)">
         Bathrooms: <input type="number" name="baths" required placeholder="(Required)">
         Square Footage: <input type="number" name="sqft" required placeholder="(Required)"></br>
-        Price: <input type="number" name="price" required placeholder="(Required)">
+        Price ($): <input type="number" name="price" required placeholder="(Required)">
         Cost Basis: <select name="cost_basis">
             <option value="Per Month">Per Month</option>
             <option value="Purchase Price">Purchase Price</option>

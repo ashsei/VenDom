@@ -10,7 +10,7 @@
     <ul>
         <% for (let i = 0; i < properties.length; i++){ %>
             <li>
-                <img src= "<%= properties[i].img %>" class = main_img><br>
+                <a href = "/vendom/<%=properties[i].id; %>"><img src= "<%= properties[i].img %>" class = main_img></a><br>
                 <% if (properties[i].nickname != undefined) { %>
                     Nickname: <%= properties[i].nickname %><br>
                 <% } %>
