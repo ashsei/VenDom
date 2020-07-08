@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const propertySchema = new mongoose.Schema({
-    type: { type: String, required: true },
+    type: String,
     nickname: String,
     address: { type: String, required: true},
     img: { type: String, required: true},
@@ -9,9 +9,8 @@ const propertySchema = new mongoose.Schema({
     baths: { type: Number, required: true},
     sqft: { type: Number, required: true},
     price: { type: Number, required: true},
-    cost: { type: String, required: true},
+    cost_basis: String,
     description: { type: String, required: true}
-    
 });
 
 const Property = mongoose.model('Property', propertySchema);

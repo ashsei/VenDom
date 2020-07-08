@@ -21,9 +21,8 @@ const Property = require('./models/propertySchema.js');
         });
     });
     // CREATE //
-    app.post('/vendom/', (req, res) => {
+    app.post('/vendom', (req, res) => {
         Property.create(req.body, (error, createdProperty) => {
-            res.send(createdProperty);
             res.redirect('/vendom');
         });
     });
