@@ -5,11 +5,11 @@ const methodOverride = require('method-override');
 const app = express();
 const PORT = 3000;
 const propertiesController = require('./controllers/properties.js');
-app.use('/vendom', propertiesController);
 
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
+app.use('/vendom', propertiesController);
 mongoose.connect('mongodb://localhost:27017/vendom', { 
     useNewUrlParser: true , 
     useUnifiedTopology: true, 
