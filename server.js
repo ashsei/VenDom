@@ -5,7 +5,6 @@ const methodOverride = require('method-override');
 const app = express();
 const PORT = 3000;
 const propertiesController = require('./controllers/properties.js');
-// const bootstrap = require('bootstrap');
 
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended:true}));
