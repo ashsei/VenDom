@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('./partials/head.ejs') %>
+</head>
+<body>
+    <%- include ('./partials/header.ejs') %>
+    <h1>Edit <%=property.address %></h1>
+    <form action="/vendom/<%=property.id%>?_method=PUT" method="POST">
+        Rent or Buy? : <select name="type" value ="<%=property.type %>">
+            <option value="Rent">Rent</option>
+            <option value="Buy">Buy</option>
+        </select></br>
+        Property Nickname: <input type="text" name="nickname" value = "<%=property.nickname%>"></br>
+        Property Address: <input type="text" name="address" required value = "<%=property.address%>"></br>
+        Image Link: <input type="text" name="img" required value = "<%=property.img%>"></br>
+        Bedrooms: <input type="number" name="beds" required value = "<%=property.beds%>">
+        Bathrooms: <input type="number" name="baths" required value = "<%=property.baths%>">
+        Square Footage: <input type="number" name="sqft" required value = "<%=property.sqft%>"></br>
+        Price ($): <input type="number" name="price" required value = "<%=property.price%>">
+        Cost Basis: <select name="cost_basis" value ="<%=property.cost_basis%>">
+            <option value="Per Month">Per Month</option>
+            <option value="Purchase Price">Purchase Price</option>
+        </select></br>
+        Description: <input type="textarea" name="description" required value = "<%=property.description%>"></br>
+        <input type="submit" value="Edit Property"></br>
+    </form>
+    <%- include ('./partials/footer.ejs') %>
+</body>
+</html>
