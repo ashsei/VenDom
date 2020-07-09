@@ -5,7 +5,7 @@ const methodOverride = require('method-override');
 const app = express();
 const PORT = 3000;
 const propertiesController = require('./controllers/properties.js');
-app.use(propertiesController);
+app.use('/vendom', propertiesController);
 
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended:true}));
