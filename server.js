@@ -28,14 +28,14 @@ app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
 app.use('/vendom', propertiesController);
-mongoose.connect('mongodb://localhost:27017/vendom', { 
-    useNewUrlParser: true , 
-    useUnifiedTopology: true, 
-    useFindAndModify: false, 
-});
-mongoose.connection.once('open', () => {
-    console.log('Connected to Mongo');
-});
+// mongoose.connect('mongodb://localhost:27017/vendom', { 
+//     useNewUrlParser: true , 
+//     useUnifiedTopology: true, 
+//     useFindAndModify: false, 
+// });
+// mongoose.connection.once('open', () => {
+//     console.log('Connected to Mongo');
+// });
 
 // LISTENER //
 app.listen(port, () => {
