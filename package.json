@@ -1,6 +1,9 @@
 {
   "name": "vendom",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.3.0"
+  },
   "description": "General Assembly Project Two",
   "main": "index.js",
   "scripts": {
