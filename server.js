@@ -7,7 +7,7 @@ const propertiesController = require('./controllers/properties.js');
 const db = mongoose.connection;
 
 // PORT //
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 // DATABASE //
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/'+ `vendom`;
@@ -38,6 +38,6 @@ mongoose.connection.once('open', () => {
 });
 
 // LISTENER //
-app.listen(PORT, () => {
-    console.log('Listening on Port ' + PORT);
+app.listen(port, () => {
+    console.log('Listening on Port ' + port);
 })
