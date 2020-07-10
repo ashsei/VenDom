@@ -1,13 +1,19 @@
 <header>
-    <nav class="navbar">
-        <!-- Change image to include name in image itself -->
-        <img class="nav-logo" src="/images/branding/logo-img.png">
-        <span class="nav-text">VenDom</span>
-        <!-- Change these links into collapsable list -->
-        <a href="#" class="nav-link">Home</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Zillow</a>
-        <a href="#" class="nav-link">Truila</a>
-        <a href="#" class="nav-link">HotPads</a>
-    </nav>
+    <div class="title-bar" data-responsive-toggle="mainMenu" data-hide-for="small">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+    </div>
+    <div class="top-bar" id="mainMenu">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <img class="nav-logo" src="/images/branding/logo-img.png">
+                <li class="menu-text">VenDom</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Zillow</a></li>
+                <li><a href="#">Truila</a></li>
+                <li><a href="#">HotPads</a></li>
+            </ul>
+        </div>
+    </div>
 </header>
