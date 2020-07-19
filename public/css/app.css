@@ -1,3 +1,6 @@
+img.logo {
+    text-align: left;
+}
 #mainMenu, ul.menu, footer {
     background-color: #139482;
     font-family: 'Shadows Into Light', cursive;
@@ -7,11 +10,14 @@
 
 p.lead {
     text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3em;
 }
 
 .callout {
     text-align: center;
-    background-color: #aff0e7
+    background-color: #aff0e7;
+    font-family: 'Open Sans Condensed', sans-serif
 }
 
 p.property-name {
@@ -31,6 +37,7 @@ footer {
 
 h1 {
     text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif
 }
 
 body {
@@ -43,4 +50,6 @@ a {
 
 p {
     text-align: center;
+
 }
+
