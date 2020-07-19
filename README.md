@@ -17,19 +17,19 @@ I then converted this wireframe into a Trello Board that broke the project down 
 Node.js, Mongoose, Express, EJS, Heroku, CRUD Routing
 
 ## Known Bugs
--Errors in manifest.json as seen in console on page load.
--Footer isn't always at bottom if page content is short.
+- Errors in manifest.json as seen in console on page load.
+- Footer isn't always at bottom if page content is short.
 
 ## Forward Thoughts
--User Authentication Capability
--Implementation of modal of multiple images on Show Page
--API Integration to cut out manual entry of house information
--Google Maps Integration to display map of favorites on main page
--Social Accounts actually set up
+- User Authentication Capability
+- Implementation of modal of multiple images on Show Page
+- API Integration to cut out manual entry of house information
+- Google Maps Integration to display map of favorites on main page
+- Social Accounts actually set up
 
 ## Credit Where Credit Is Due:
 
--Logo: https://www.cleanpng.com/png-house-heart-home-small-signs-1327994/
--Social Media Icons: https://www.flaticon.com/categories/social-media (Pixel Perfect, Free Pix)
--Favicon Implementation: https://www.favicon-generator.org/
--Foundation: https://get.foundation/index.html (CSS Framework, Templates and Building Blocks Adapted to Site)
+- Logo: https://www.cleanpng.com/png-house-heart-home-small-signs-1327994/
+- Social Media Icons: https://www.flaticon.com/categories/social-media (Pixel Perfect, Free Pix)
+- Favicon Implementation: https://www.favicon-generator.org/
+- Foundation: https://get.foundation/index.html (CSS Framework, Templates and Building Blocks Adapted to Site)
