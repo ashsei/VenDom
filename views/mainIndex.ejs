@@ -5,33 +5,38 @@
 </head>
 <body>
     <%- include ('./partials/header.ejs') %>
-    <div class="row column">
-        <hr>
-    </div>
-    <div class="row column">
-        <p class="lead">Your Favorite Properties</p>
-    </div>
-    
-    <div class="row small-up-1 medium-up-2 large-up-3">
-        <% for (let i = 0; i < properties.length; i++){ %>
-            <div class="column">
-                <div class="callout">
-                    <% if (properties[i].nickname != undefined) { %>
-                        <p class="property-name"><%= properties[i].nickname %></p>
-                    <% } else { %>
-                        <p class="property-name"><%= properties[i].address %></p>
-                    <% } %>
-                    <a href="/vendom/<%=properties[i].id%>">
-                        <p><img src="<%= properties[i].img %>" alt="Image of <%= properties[i].address %>"></p></a>
-                    <p class="lead">$<%= properties[i].price %> <%= properties[i].cost_basis %></p>
-                    <p class="subheader">Beds: <%= properties[i].beds %> Baths: <%= properties[i].baths %> Sqft: <%= properties[i].sqft %></p><br>
-                    <button class="button" onclick="window.location.href='/vendom/<%=properties[i].id; %>/edit'">Edit</button>
-                    <form action="/vendom/<%=properties[i].id; %>?_method=DELETE" method="POST">
-                        <input type="submit" class="button" value="Delete">
-                    </form>
+    <div class="content-wrap">
+        <div class="row column">
+            <hr>
+        </div>
+        <div class="row column">
+            <p class="lead">Your Favorite Properties</p>
+        </div>
+        
+        <div class="row small-up-1 medium-up-2 large-up-3">
+            <% for (let i = 0; i < properties.length; i++){ %>
+                <div class="column">
+                    <div class="callout">
+                        <% if (properties[i].nickname != undefined) { %>
+                            <p class="property-name"><%= properties[i].nickname %></p>
+                        <% } else { %>
+                            <p class="property-name"><%= properties[i].address %></p>
+                        <% } %>
+                        <a href="/vendom/<%=properties[i].id%>">
+                            <p><img src="<%= properties[i].img %>" alt="Image of <%= properties[i].address %>"></p></a>
+                        <p class="lead">$<%= properties[i].price %> <%= properties[i].cost_basis %></p>
+                        <p class="subheader">Beds: <%= properties[i].beds %> Baths: <%= properties[i].baths %> Sqft: <%= properties[i].sqft %></p><br>
+                        <button class="button" onclick="window.location.href='/vendom/<%=properties[i].id; %>/edit'">Edit</button>
+                        <form action="/vendom/<%=properties[i].id; %>?_method=DELETE" method="POST">
+                            <input type="submit" class="button" value="Delete">
+                        </form>
+                    </div>
                 </div>
-            </div>
-        <% } %>
+            <% } %>
+        </div>
+        <div class="row column">
+            <hr>
+        </div>
     </div>
 
     <div class="row column">

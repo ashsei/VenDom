@@ -9,12 +9,14 @@ p.lead {
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 3em;
+    color: #07db83;
 }
 
 .callout {
     text-align: center;
     background-color: #aff0e7;
-    font-family: 'Open Sans Condensed', sans-serif
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #139482
 }
 
 p.property-name {
@@ -22,23 +24,24 @@ p.property-name {
     font-size: 1.5em;
 }
 
+body {
+    background-color: #aff0e7;
+    position: relative;
+    min-height: 100vh;
+}
+
 footer {
     position: relative;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
-    vertical-align: center;
     text-align: center;
-    padding-top: 0px;
-    color: #aff0e7
+    color: #aff0e7;
 }
 
 h1 {
     text-align: center;
-    font-family: 'Open Sans Condensed', sans-serif
-}
-
-body {
-    background-color: #aff0e7
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #139482;
 }
 
 a {
@@ -48,5 +51,9 @@ a {
 p {
     text-align: center;
 
+}
+
+p.subheader {
+    color: #698771
 }
 
