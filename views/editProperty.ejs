@@ -6,7 +6,7 @@
 <body>
     <%- include ('./partials/header.ejs') %>
     <h1>Edit <%=property.address %></h1>
-    <form action="/vendom/<%=property.id%>?_method=PUT" method="POST">
+    <form action="/vendom/<%=property.id%>?_method=PUT" method="POST" class ="callout text-center">
         Rent or Buy? : <select name="type" value ="<%=property.type %>">
             <option value="Rent">Rent</option>
             <option value="Buy">Buy</option>
@@ -22,8 +22,8 @@
             <option value="Per Month">Per Month</option>
             <option value="Purchase Price">Purchase Price</option>
         </select></br>
-        Description: <input type="textarea" name="description" required value = "<%=property.description%>"></br>
-        <input type="submit" value="Edit Property"></br>
+        Description: <input type="text" name="description" required value = "<%=property.description%>"></br>
+        <input type="submit" class="button hollow expanded" value="Edit Property"></br>
     </form>
     <%- include ('./partials/footer.ejs') %>
 </body>

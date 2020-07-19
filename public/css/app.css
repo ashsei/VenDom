@@ -1,7 +1,25 @@
-a.img{
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 370px;
-    max-height: 400px;
-    height: auto;
-    -ms-interpolation-mode: bicubic; }
+
+#mainMenu, ul.menu {
+    background-color: #8a97d1;
+}
+
+p.lead {
+    text-align: center;
+}
+
+.callout {
+    text-align: center;
+}
+
+p.property-name {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+
+}

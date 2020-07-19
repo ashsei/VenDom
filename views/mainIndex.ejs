@@ -17,11 +17,12 @@
             <div class="column">
                 <div class="callout">
                     <% if (properties[i].nickname != undefined) { %>
-                        <p><%= properties[i].nickname %></p>
+                        <p class="property-name"><%= properties[i].nickname %></p>
                     <% } else { %>
-                        <p><%= properties[i].address %></p>
+                        <p class="property-name"><%= properties[i].address %></p>
                     <% } %>
-                    <p><img src="<%= properties[i].img %>" alt="Image of <%= properties[i].address %>"></a></p>
+                    <a href="/vendom/<%=properties[i].id%>">
+                        <p><img src="<%= properties[i].img %>" alt="Image of <%= properties[i].address %>"></p></a>
                     <p class="lead">$<%= properties[i].price %> <%= properties[i].cost_basis %></p>
                     <p class="subheader">Beds: <%= properties[i].beds %> Baths: <%= properties[i].baths %> Sqft: <%= properties[i].sqft %></p><br>
                     <button class="button" onclick="window.location.href='/vendom/<%=properties[i].id; %>/edit'">Edit</button>
