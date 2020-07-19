@@ -8,9 +8,9 @@ My favorite part about moving is house hunting, but something that has always bo
 
 ## Approach
 My approach was methodical in which I first wireframed the application idea in a rudimentary sense, as seen in this image:
-!(/public/images/planning/wireframe.png)
+![wireframe](/public/images/planning/wireframe.png)
 I then converted this wireframe into a Trello Board that broke the project down into small chunks of functionality, code, and features, as seen in this image:
-!(/public/images/planning/ProjectBreakdown.png)
+![trello](/public/images/planning/ProjectBreakdown.png)
 
 ## Technologies Used
 
