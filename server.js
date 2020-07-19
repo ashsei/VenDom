@@ -27,7 +27,11 @@ db.on('open' , ()=>{});
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
-app.use('/', propertiesController);
+app.use('/vendom', propertiesController);
+app.get('/', (req, res) => {
+    res.render('mainIndex.ejs');
+})
+
 // mongoose.connect('mongodb://localhost:27017/vendom', { 
 //     useNewUrlParser: true , 
 //     useUnifiedTopology: true, 
