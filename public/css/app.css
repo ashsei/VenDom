@@ -1,6 +1,8 @@
-
-#mainMenu, ul.menu {
-    background-color: #8a97d1;
+#mainMenu, ul.menu, footer {
+    background-color: #139482;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5em;
+    color: #07db83
 }
 
 p.lead {
@@ -9,7 +11,7 @@ p.lead {
 
 .callout {
     text-align: center;
-    background-color: #3f4666
+    background-color: #aff0e7
 }
 
 p.property-name {
@@ -21,5 +23,24 @@ footer {
     position: relative;
     bottom: 0px;
     width: 100%;
+    vertical-align: center;
+    text-align: center;
+    padding-top: 0px;
+    color: #aff0e7
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: #aff0e7
+}
+
+a {
+    color: #aff0e7
+}
+
+p {
     text-align: center;
 }

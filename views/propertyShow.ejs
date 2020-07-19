@@ -6,21 +6,24 @@
 <body>
     <%- include ('./partials/header.ejs') %>
     <h1><%= property.address %> Information</h1>
-    <!-- Would like to implement modal of multiple images here if possible -->
-    <img src= "<%= property.img %>" class = main_img></br>
-    <% if (property.nickname != undefined) { %>
-        Nickname: <%= property.nickname %></br>
-    <% } %>
-    Listing Type: <%= property.type %></br>
-    Address: <%= property.address %></br>
-    Bedrooms: <%= property.beds %></br>
-    Bathrooms: <%= property.baths %></br>
-    Square Footage: <%= property.sqft %></br>
-    Price: $<%= property.price %> <%= property.cost_basis %></br>
-    Description: <%= property.description %></br>
-    Listing URL: <%= property.listing %></br>
+    <div class="callout">
+        <!-- Would like to implement modal of multiple images here if possible -->
+        <img src= "<%= property.img %>" class = main_img></br>
+        <% if (property.nickname != undefined) { %>
+            Nickname: <%= property.nickname %></br></br>
+        <% } %></br>
+        Listing Type: <%= property.type %></br></br>
+        Address: <%= property.address %></br></br>
+        Bedrooms: <%= property.beds %></br></br>
+        Bathrooms: <%= property.baths %></br></br>
+        Square Footage: <%= property.sqft %></br></br>
+        Price: $<%= property.price %> <%= property.cost_basis %></br></br>
+        Description: <%= property.description %></br></br>
+        Listing URL: <%= property.listing %></br></br>
+        </div>
 
-    <button onclick="window.location.href='/vendom'" class="button">Back</button>
+    <button class="button hollow expanded" onclick="window.location.href='/vendom'" >Back</button>
+    <button class="button hollow expanded" onclick="window.location.href='/vendom/<%=property.id; %>/edit'">Edit Property</button>
     <%- include ('./partials/footer.ejs') %>
 
 </body>

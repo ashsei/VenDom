@@ -6,7 +6,7 @@
 <body>
     <%- include ('./partials/header.ejs') %>
     <h1>Add a New Property to Your Favorites!</h1>
-    <form action="/vendom" method="POST">
+    <form action="/vendom" method="POST" class ="callout text-center">
         Rent or Buy? : <select name="type">
             <option value="Rent">Rent</option>
             <option value="Buy">Buy</option>
@@ -24,7 +24,7 @@
         </select></br>
         Description: <input type="text" name="description" required placeholder="(Required)"></br>
         Listing URL: <input type="text" name="listing" required placeholder="(Required)"></br>
-        <input type="submit" value="Add Property"></br>
+        <input type="submit" class="button hollow expanded" value="Add Property"></br>
     </form>
     <%- include ('./partials/footer.ejs') %>
 </body>
