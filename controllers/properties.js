@@ -3,10 +3,17 @@ const router = express.Router();
 const Property = require('../models/propertySchema.js')
 
 // ROUTES //
+
     // NEW //
     router.get('/add', (req, res) => {
         res.render('newProperty.ejs', {
             tabTitle: 'Add Property',
+        });
+    });
+    // ABOUT //
+    router.get('/about', (req, res) => {
+        res.render('about.ejs', {
+            tabTitle: 'About',
         });
     });
     // CREATE //
@@ -33,6 +40,7 @@ const Property = require('../models/propertySchema.js')
             });
         });
     });
+    
     // DELETE //
     router.delete('/:id', (req, res) => {
         Property.findByIdAndRemove(req.params.id, (error, data) => {
@@ -51,6 +59,7 @@ const Property = require('../models/propertySchema.js')
             );
         });
     });
+    
     // PUT //
     router.put('/:id', (req, res) => {
         Property.findByIdAndUpdate(req.params.id, req.body, {new:true}, (error, updatedModel) => {

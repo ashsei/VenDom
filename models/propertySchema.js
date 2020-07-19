@@ -10,7 +10,8 @@ const propertySchema = new mongoose.Schema({
     sqft: { type: Number, required: true},
     price: { type: Number, required: true},
     cost_basis: String,
-    description: { type: String, required: true}
+    description: { type: String, required: true},
+    listing: String,
 });
 
 const Property = mongoose.model('Property', propertySchema);
