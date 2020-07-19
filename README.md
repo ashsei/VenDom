@@ -29,7 +29,7 @@ Node.js, Mongoose, Express, EJS, Heroku, CRUD Routing
 
 ## Credit Where Credit Is Due:
 
-Logo: https://www.cleanpng.com/png-house-heart-home-small-signs-1327994/
-Social Media Icons: https://www.flaticon.com/categories/social-media (Pixel Perfect, Free Pix)
-Favicon Implementation: https://www.favicon-generator.org/
-Foundation: https://get.foundation/index.html (CSS Framework, Templates and Building Blocks Adapted to Site)
+-Logo: https://www.cleanpng.com/png-house-heart-home-small-signs-1327994/
+-Social Media Icons: https://www.flaticon.com/categories/social-media (Pixel Perfect, Free Pix)
+-Favicon Implementation: https://www.favicon-generator.org/
+-Foundation: https://get.foundation/index.html (CSS Framework, Templates and Building Blocks Adapted to Site)
